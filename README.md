@@ -5,7 +5,7 @@ Use this project and workflow to run raw Python directly in Azure Functions. Thi
 # Setup
 
 1. Fork this repository.
-1. Create a Function App in Azure. You'll want to use NodeJS 18 LTS or 20 and Linux as your operating system..
+1. Create a Function App in Azure. You'll want to the latest version of Python and Linux as your operating system..
 1. In your Function App in Azure, go to **Deployment Center** and connect it to the forked GitHub repository.
 1. In Overview, copy your URL. We'll use this later to setup our Custom Integration. It will look like the following: https://yourfunctionapp.azurewebsites.net/api/run.
 1. Navigate to your function app in Azure, then go to Overview. Under functions, click **ScriptRunner**.
