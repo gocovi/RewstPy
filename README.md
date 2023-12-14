@@ -21,9 +21,9 @@ Use this project and workflow to run raw Python directly in Azure Functions. Thi
 
 # Usage
 
-1. Create a Python under Scripts in Rewst. If you want to return results, assign something to a variable named `rewst_response`.
+1. Create a Python script under Scripts in Rewst. If you want to return results, assign something to a variable named `rewst_response`.
 1. Open the `Run Python` workflow and click Test.
-1. For script content, enter `return { "foo": "bar" }`.
+1. For script content, enter select your test script.
 1. See your result in `RESULT.result`.
 
 # Packages
