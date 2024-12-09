@@ -12,9 +12,9 @@ Use this project and workflow to run raw Python directly in Azure Functions. Thi
 1. Under Function Keys, copy your default key. We'll also be using this in the Custom Integration.
 1. In Rewst, navigate to Configuration > Integrations > Custom Integrations. Add a new one called "Rewst Python" and match the settings below:
 
-    | Hostname                          	| API Key            	| Authentication Method 	| API Key Header Name 	|
-    |-----------------------------------	|--------------------	|-----------------------	|---------------------	|
-    | yourfunctionapp.azurewebsites.net 	| The key you copied 	| API Key               	| x-functions-key     	|
+    | Hostname                          | API Key            | Authentication Method | API Key Header Name |
+    | --------------------------------- | ------------------ | --------------------- | ------------------- |
+    | yourfunctionapp.azurewebsites.net | The key you copied | API Key               | x-functions-key     |
 
 1. Import the `run-python.bundle.json` file as a new workflow.
 1. In the `run_script` action under Advanced, you may need to add an Integration Override for your new Rewst Python integration as well and then click publish.
@@ -28,4 +28,4 @@ Use this project and workflow to run raw Python directly in Azure Functions. Thi
 
 # Packages
 
-If you wish to use any packages, you'll need to put them in the requirements.txt file in your own repo. 
+If you wish to use any packages, you'll need to put them in a `requirements.txt` file in your own repo.
