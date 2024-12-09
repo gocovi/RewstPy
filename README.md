@@ -28,4 +28,7 @@ Use this project and workflow to run raw Python directly in Azure Functions. Thi
 
 # Packages
 
-If you wish to use any packages, you'll need to put them in a `requirements.txt` file in your own repo.
+If you wish to use any packages, you'll need to put them in a `requirements.txt` file in your own repo. Currently, there's an issue I haven't had time to fully diagnose where GitHub Actions won't deploy a package with the required packages. A workaround would be to instead use Azure Functions Tools and deploy locally. The high-level process is:
+
+1. Install [Azure Functions Tools](https://learn.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=windows%2Cisolated-process%2Cnode-v4%2Cpython-v2%2Chttp-trigger%2Ccontainer-apps&pivots=programming-language-python).
+1. Run `func azure functionapp publish YOUR_APP_NAME --python` from the root of your forked repo.
